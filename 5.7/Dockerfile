@@ -38,6 +38,7 @@ ENV PATH $PATH:/usr/local/mysql/bin:/usr/local/mysql/scripts
 
 WORKDIR /usr/local/mysql
 VOLUME /var/lib/mysql
+VOLUME /var/log/mysql
 
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

@@ -39,4 +39,5 @@ if [ -z "$(ls -A /var/lib/mysql)" -a "${1%_safe}" = 'mysqld' ]; then
 fi
 
 chown -R mysql:mysql /var/lib/mysql
+chown -R mysql:mysql /var/log/mysql
 exec "$@"
